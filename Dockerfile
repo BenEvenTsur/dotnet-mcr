@@ -1,6 +1,6 @@
-LABEL MATLAB_VERSION R2019b
-LABEL DOTNET_VERSION 2.1
 FROM mcr.microsoft.com/dotnet/core/sdk:2.1-bionic
+LABEL "MATLAB_VERSION"="R2019b"
+LABEL "DOTNET_VERSION"="2.1"
 RUN apt-get update && \
     apt-get install -y unzip
 RUN mkdir /mcr && \
